@@ -25,7 +25,3 @@ app.add_middleware(SessionMiddleware, secret_key="your-secret-key")
 
 app.include_router(sql_api.router, tags=["NL2SQL on DB"])
 app.include_router(csv_api.router, tags=["NL2SQL on CSV"])
-# app.include_router(bot_details.router, tags=["Bot Details"])
-# app.include_router(response.router, tags=["Get Answer"])
-# app.include_router(linkedin_api.router, tags=["Linkedin messages Operations"])
-
